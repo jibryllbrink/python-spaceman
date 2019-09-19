@@ -35,6 +35,7 @@ def is_word_guessed(secret_word, letters_guessed):
             return False
     return True
 
+
     # TODO: Loop through the letters in the secret_word and check if a letter is not in lettersGuessed √
 
 def get_guessed_word(secret_word, letters_guessed):
@@ -137,14 +138,17 @@ def spaceman(secret_word):
                 print(''.join(get_guessed_word(secret_word, letters_guessed)))
                 print("These letters are available: " + ''.join(str(c) for c in letter_bank))
                 print("-----------\n")
-    #TODO: Check if the guessed letter is in the secret or not and give the player feedback
+    #TODO: Check if the guessed letter is in the secret or not and give the player feedback√
 
-    #TODO: show the guessed word so far
+    #TODO: show the guessed word so far√
 
-    #TODO: check if the game has been won or lost
+    #TODO: check if the game has been won or lost √
+
+
+# Calls that will start the game
 print("Welcome to Spaceman")
             # personalized feature to make the game better.
-name = input("what is your name? ")
+name = input("what is your name?")
 print("Hello, " + name, "Let's play!")
 print("******************")
 print("Guess the correct word and win the game. Relax, and Have fun!")
@@ -155,5 +159,3 @@ while is_running == True:
     secret_word = load_word()
     spaceman(secret_word)
     is_running = play_again()
-
-#These function calls that will start the game
